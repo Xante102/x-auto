@@ -1,8 +1,6 @@
-	status
-
 const mongoose = require("mongoose");
 
-const favouriteSchema = new mongoose.Schema(
+const rentalSchema = new mongoose.Schema(
   {
     car: {
       type: mongoose.Schema.ObjectId,
@@ -41,18 +39,11 @@ const favouriteSchema = new mongoose.Schema(
       required: [true, "Drop-off time cannot be empty!"],
     },
 
-    // status: {
-    //   type: String,
-    //   required: [true, "Status cannot be empty!"],
-    //   enum: {
-    //     values: ["pending", "returned", "available", "unavailable"],
-    //     messages: "Status is either: pending, returned, available or unavailable",
-    //   },
-    // },
+
   },
 );
 
-const Favourite = mongoose.model("Favourite", favouriteSchema);
+const Rental = mongoose.model("Rental", rentalSchema);
 
-module.exports = Favourite;
+module.exports = Rental;
 

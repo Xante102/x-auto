@@ -1,4 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Theme */
+
+	.enhanced-secondary-text {
+		@apply text-[#C348FD];
+	}
+
+	.primary-bg {
+		@apply bg-[#B37CCD];
+	}
+
+	.primary-text {
+		@apply text-[#1a202c];
+	}
+
+	.secondary-bg {
+		@apply bg-[#000000];
+	}
+
+	.secondary-text {
+		@apply text-[#90A3BF];
+	}
+
+	.primary-button {
+		@apply primary-bg  rounded-[4px] px-4 py-2 ;
+		@apply flex items-center justify-center;
+		@apply text-sm font-medium text-white;
+	}
+
+	.secondary-button {
+		@apply secondary-bg rounded-[4px] px-4 py-2 text-white;
+		@apply flex items-center justify-center;
+		@apply text-sm font-medium text-white;
+	}
+
+	.text-secondary-secondary-accent {
+		@apply text-[#000000];
+	}
+
+	.filter-container {
+		@apply primary-bg z-10 -my-2 flex h-14 w-14 cursor-pointer items-center justify-center rounded-md shadow-2xl shadow-[#C348FD] md:h-12 md:w-28;
+	}
+
+	.filter-container-joined {
+		@apply primary-bg z-10 -my-5 -mx-3 flex h-14 w-14 cursor-pointer items-center justify-center rounded-md shadow-2xl shadow-[#C348FD] md:h-12 md:w-28;
+	}
+
+	.link {
+		@apply secondary-text;
+	}
+	.logo-primary-color {
+		@apply text-[#C348FD];
+	}
+
+	.logo-secondary-color {
+		@apply primary-text;
+	}
+
+	.favorite-icon {
+		@apply fill-red-600;
+	}
+
+	.default-page-bg {
+		@apply bg-[#F8F6F9];
+	}
+
+	.primary-button-text {
+		@apply text-sm font-medium text-white;
+	}
+
+	.slider {
+		@apply enhanced-primary-bg hover:primary-bg h-2 w-2 cursor-pointer appearance-none rounded-full opacity-70 outline-none hover:opacity-100;
+		-webkit-transition: 0.2s;
+		transition: opacity 0.2s;
+	}
+
+	.slider::-webkit-slider-thumb {
+		@apply enhanced-primary-bg h-3 w-3 cursor-pointer appearance-none rounded-full ring-2 ring-white;
+	}
+
+	.slider::-moz-range-thumb {
+		@apply enhanced-primary-bg h-2 w-2 cursor-pointer rounded-full;
+	}
+
+	.input-clean {
+		@apply rounded-sm border-0 border-transparent border-white duration-300 focus:border-transparent focus:ring-1 focus:ring-[#B37CCD];
+	}
+
+	.enhanced-primary-bg {
+		@apply bg-[#C348FD];
+	}
+
+	.sidebar-icon-active {
+		@apply fill-white stroke-white;
+	}
+
+	.sidebar-icon-inactive {
+		@apply stroke-[#B37CCD]/50 duration-300 group-hover:stroke-white;
+	}
+
+	.sidebar-button-active {
+		@apply primary-bg w-full rounded-md py-2.5 px-4 duration-300;
+		@apply flex items-center justify-start gap-x-2;
+		@apply text-sm font-medium text-white;
+	}
+
+	.sidebar-button-inactive {
+		@apply hover:primary-bg w-full rounded-md py-2.5  px-4 duration-300;
+		@apply flex items-center justify-start gap-x-2;
+		@apply secondary-text text-sm font-medium hover:text-white;
+	}
+}

@@ -1,0 +1,612 @@
+<body class="default-page-bg h-full w-full">
+    <!-- Header -->
+    <!-- Main Section -->
+    <main class="container mx-auto max-w-7xl px-8 py-5">
+        <!-- Display Containers -->
+        <div class="flex flex-col-reverse gap-y-5 lg:flex-row lg:gap-6">
+            <!-- Container 1 -->
+            <section class="h-full lg:w-4/6 lg:py-5">
+                <div class="flex flex-col gap-y-5">
+                    <!-- Billing Info -->
+                    <div class="flex flex-col rounded-md bg-white p-5">
+                        <div class="flex items-end justify-between">
+                            <div class="flex flex-col">
+                                <div>
+                                    <h1 class="text-primary text-lg font-semibold">
+                                        Billing Info
+                                    </h1>
+                                </div>
+                                <div>
+                                    <h3 class="text-secondary text-xs font-medium">
+                                        Please enter your billing info
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-secondary text-xs font-medium">
+                                    Step 1 of 4
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
+                            <div class="relative">
+                                <label
+                                    class="text-primary block text-xs font-medium"
+                                    for="email">
+                                    Name
+                                </label>
+
+                                <input
+                                    placeholder="Your Name"
+                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                    id="name"
+                                    type="text" />
+                            </div>
+                            <div class="relative">
+                                <label
+                                    class="text-primary block text-xs font-medium"
+                                    for="email">
+                                    Name
+                                </label>
+
+                                <input
+                                    placeholder="Your Name"
+                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                    id="name"
+                                    type="text" />
+                            </div>
+                            <div class="relative">
+                                <label
+                                    class="text-primary block text-xs font-medium"
+                                    for="email">
+                                    Name
+                                </label>
+
+                                <input
+                                    placeholder="Your Name"
+                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                    id="name"
+                                    type="text" />
+                            </div>
+                            <div class="relative">
+                                <label
+                                    class="text-primary block text-xs font-medium"
+                                    for="email">
+                                    Name
+                                </label>
+
+                                <input
+                                    placeholder="Your Name"
+                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                    id="name"
+                                    type="text" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rental Info -->
+                    <div class="flex flex-col rounded-md bg-white p-5">
+                        <div class="flex items-end justify-between">
+                            <div class="flex flex-col">
+                                <div>
+                                    <h1 class="text-primary text-lg font-semibold">
+                                        Rental Info
+                                    </h1>
+                                </div>
+                                <div>
+                                    <h3 class="text-secondary text-xs font-medium">
+                                        Please select your rental date
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-secondary text-xs font-medium">
+                                    Step 2 of 4
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Pick up -->
+                        <div class="mt-10 flex w-full flex-col">
+                            <div class="flex items-center gap-2">
+                                <span>
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect
+                                            width="16"
+                                            height="16"
+                                            rx="8"
+                                            fill="#3563E9"
+                                            fill-opacity="0.3" />
+                                        <circle cx="8" cy="8" r="4" fill="#3563E9" />
+                                    </svg>
+                                </span>
+                                <span class="text-primary block text-xs font-medium">
+                                    Pick - Up
+                                </span>
+                            </div>
+                            <div class="mt-4 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Locations
+                                    </label>
+
+                                    <select
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="pick-up-locations"
+                                        type="text">
+                                        <option selected disabled>
+                                            Select a pick-up location
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="name"
+                                        type="date" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="name"
+                                        type="time" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drop off -->
+                        <div class="mt-10 flex w-full flex-col">
+                            <div class="flex items-center gap-2">
+                                <span>
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect
+                                            width="16"
+                                            height="16"
+                                            rx="8"
+                                            fill="#3563E9"
+                                            fill-opacity="0.3" />
+                                        <circle cx="8" cy="8" r="4" fill="#3563E9" />
+                                    </svg>
+                                </span>
+                                <span class="text-primary block text-xs font-medium">
+                                    Drop - Off
+                                </span>
+                            </div>
+                            <div class="mt-4 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Locations
+                                    </label>
+
+                                    <select
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="pick-up-locations"
+                                        type="text">
+                                        <option selected disabled>
+                                            Select a pick-up location
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="name"
+                                        type="date" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                        id="name"
+                                        type="time" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="flex flex-col rounded-md bg-white p-5">
+                        <div class="flex items-end justify-between">
+                            <div class="flex flex-col">
+                                <div>
+                                    <h1 class="text-primary text-lg font-semibold">
+                                        Payment Method
+                                    </h1>
+                                </div>
+                                <div>
+                                    <h3 class="text-secondary text-xs font-medium">
+                                        Please enter your payment method
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-secondary text-xs font-medium">
+                                    <svg
+                                        width="92"
+                                        height="20"
+                                        viewBox="0 0 92 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_9_6695)">
+                                            <g clip-path="url(#clip1_9_6695)">
+                                                <path
+                                                    d="M20.7995 17.7692H16.9111L19.3432 2.28076H23.2313L20.7995 17.7692Z"
+                                                    fill="#00579F" />
+                                                <path
+                                                    d="M34.8949 2.6594C34.1279 2.34602 32.9115 2 31.4074 2C27.5675 2 24.8635 4.10895 24.8469 7.12412C24.815 9.3487 26.7829 10.5843 28.2547 11.326C29.7591 12.084 30.2704 12.5787 30.2704 13.2543C30.2551 14.2919 29.0548 14.7702 27.9354 14.7702C26.383 14.7702 25.5512 14.5236 24.2871 13.9464L23.7751 13.6989L23.231 17.1757C24.1429 17.6036 25.8231 17.9834 27.5675 18C31.6474 18 34.3036 15.9237 34.335 12.7105C34.3506 10.9474 33.3115 9.59639 31.0712 8.49242C29.7112 7.78374 28.8784 7.30589 28.8784 6.58079C28.8943 5.9216 29.5828 5.24643 31.118 5.24643C32.3821 5.21336 33.3108 5.52631 34.0144 5.83948L34.3661 6.00394L34.8949 2.6594Z"
+                                                    fill="#00579F" />
+                                                <path
+                                                    d="M40.0637 12.2822C40.384 11.3924 41.6161 7.94865 41.6161 7.94865C41.6 7.98172 41.9357 7.04243 42.1277 6.46581L42.3995 7.80039C42.3995 7.80039 43.1358 11.5078 43.2957 12.2822C42.688 12.2822 40.8318 12.2822 40.0637 12.2822ZM44.8634 2.28076H41.8558C40.9283 2.28076 40.2236 2.56064 39.8235 3.56584L34.0479 17.769H38.1278C38.1278 17.769 38.7995 15.8573 38.9438 15.4456C39.3914 15.4456 43.3603 15.4456 43.9361 15.4456C44.0478 15.9894 44.4001 17.769 44.4001 17.769H48.0003L44.8634 2.28076Z"
+                                                    fill="#00579F" />
+                                                <path
+                                                    d="M13.6634 2.28076L9.85548 12.8424L9.43936 10.7004C8.73535 8.22875 6.52742 5.54339 4.06348 4.20816L7.55143 17.7528H11.6632L17.775 2.28076H13.6634Z"
+                                                    fill="#00579F" />
+                                                <path
+                                                    d="M6.31995 2.28076H0.0640009L0 2.5937C4.88003 3.879 8.11199 6.97717 9.43985 10.701L8.07988 3.5827C7.85598 2.59349 7.16792 2.31339 6.31995 2.28076Z"
+                                                    fill="#F4A622" />
+                                            </g>
+                                            <path
+                                                d="M80.3255 2.13892H71.6733V17.8611H80.3255V2.13892Z"
+                                                fill="#FF5F00" />
+                                            <path
+                                                d="M72.2229 9.99998C72.2229 6.80554 73.7062 3.9722 75.9859 2.13887C74.3104 0.805537 72.1955 -1.90735e-05 69.8882 -1.90735e-05C64.4222 -1.90735e-05 60 4.4722 60 9.99998C60 15.5278 64.4222 20 69.8882 20C72.1955 20 74.3104 19.1944 75.9859 17.8611C73.7062 16.0555 72.2229 13.1944 72.2229 9.99998Z"
+                                                fill="#EB001B" />
+                                            <path
+                                                d="M92.0001 10C92.0001 15.5278 87.5779 20 82.1119 20C79.8046 20 77.6897 19.1944 76.0142 17.8611C78.3214 16.0278 79.7772 13.1944 79.7772 10C79.7772 6.80556 78.2939 3.97222 76.0142 2.13889C77.6897 0.805556 79.8046 0 82.1119 0C87.5779 0 92.0001 4.5 92.0001 10Z"
+                                                fill="#F79E1B" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_9_6695">
+                                                <rect width="92" height="20" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_9_6695">
+                                                <rect
+                                                    width="48"
+                                                    height="16"
+                                                    fill="white"
+                                                    transform="translate(0 2.00001)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Pick up -->
+                        <div
+                            class="mt-10 flex w-full flex-col rounded-md bg-[#F6F7F9] p-5">
+                            <div class="flex items-center gap-2">
+                                <span>
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect
+                                            width="16"
+                                            height="16"
+                                            rx="8"
+                                            fill="#3563E9"
+                                            fill-opacity="0.3" />
+                                        <circle cx="8" cy="8" r="4" fill="#3563E9" />
+                                    </svg>
+                                </span>
+                                <span class="text-primary block text-xs font-medium">
+                                    Credit Card
+                                </span>
+                            </div>
+                            <div class="mt-4 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Locations
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                        id="name"
+                                        type="text" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                        id="name"
+                                        type="text" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                        id="name"
+                                        type="text" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="email">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        placeholder="Your Name"
+                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                        id="name"
+                                        type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation -->
+                    <div class="flex flex-col rounded-md bg-white p-5">
+                        <div class="flex items-end justify-between">
+                            <div class="flex flex-col">
+                                <div>
+                                    <h1 class="text-primary text-lg font-semibold">
+                                        Confirmation
+                                    </h1>
+                                </div>
+                                <div>
+                                    <h3 class="text-secondary text-xs font-medium">
+                                        We are getting to the end. Just a few clicks and your
+                                        rental will be ready!
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-secondary text-xs font-medium">
+                                    Step 4 of 4
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Credit Card -->
+                        <div class="flex flex-col gap-5">
+                            <div
+                                class="mt-10 flex w-full flex-col rounded-md bg-[#F6F7F9] p-5">
+                                <div class="flex items-center gap-2">
+                                    <label class="inline-flex items-center gap-2">
+                                        <input
+                                            name="confirmation[]"
+                                            type="checkbox"
+                                            class="form-checkbox h-4 w-4 rounded-sm text-blue-600" />
+                                        <span class="text-primary block text-xs font-medium">
+                                            I agree with sending an Marketing and newsletter emails.
+                                            No spam, promised!
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex w-full flex-row items-center rounded-md bg-[#F6F7F9] p-5">
+                                <div class="flex items-center gap-2">
+                                    <label class="inline-flex items-center gap-2">
+                                        <input
+                                            name="confirmation[]"
+                                            type="checkbox"
+                                            class="form-checkbox h-4 w-4 rounded-sm text-blue-600" />
+                                        <span class="text-primary block text-xs font-medium">
+                                            I agree with our terms and conditions and privacy
+                                            policy.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="primary-button mt-2">
+                                    <span class="primary-button-text">Rent Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Container 2 -->
+            <section class="h-full lg:sticky lg:top-0 lg:w-2/6 lg:py-5">
+                <div class="h-full rounded-md bg-white p-5">
+                    <div class="flex items-end justify-between">
+                        <div class="flex flex-col">
+                            <div>
+                                <div class="flex flex-col gap-y-2">
+                                    <h1 class="text-primary text-lg font-semibold">
+                                        Rental Summary
+                                    </h1>
+                                    <p class="text-secondary text-xs font-semibold">
+                                        Prices may change depending on the length of the rental
+                                        and the price of your rental car.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="mt-5 mb-5 flex w-full flex-row items-center justify-start gap-5">
+                                    <div
+                                        style="
+                                            background-image: url('../../files/featured-bg-1.jpg');
+                                            object-position: center;
+                                            object-fit: fill;
+                                            background-size: cover;
+                                        "
+                                        class="relative h-16 w-24 rounded-md">
+                                        <div
+                                            class="absolute bottom-2 left-0 right-0 flex items-center justify-center px-2 md:px-2">
+                                            <img src="../../files/nissangtr.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="gap-y-5">
+                                        <h1 class="text-primary text-xl font-semibold">
+                                            Nissan GT - R
+                                        </h1>
+                                        <div class="flex flex-row items-center gap-2">
+                                            <span class="flex flex-row">
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M9.16664 2.65832C9.2242 2.47578 9.33846 2.31635 9.49281 2.20318C9.64717 2.09001 9.83358 2.02899 10.025 2.02899C10.2164 2.02899 10.4028 2.09001 10.5571 2.20318C10.7115 2.31635 10.8257 2.47578 10.8833 2.65832L12.4333 7.42498H17.4333C17.6315 7.41749 17.8268 7.4751 17.9892 7.58902C18.1516 7.70293 18.2723 7.86689 18.3327 8.05583C18.3932 8.24478 18.3902 8.44832 18.324 8.63536C18.2579 8.82241 18.1324 8.98266 17.9666 9.09165L13.9083 12.0333L15.4583 16.8083C15.5196 16.9902 15.5212 17.1869 15.4627 17.3698C15.4043 17.5526 15.2889 17.7119 15.1335 17.8246C14.9781 17.9372 14.7907 17.9972 14.5988 17.9957C14.4068 17.9943 14.2204 17.9316 14.0666 17.8167L9.99998 14.8417L5.94164 17.7917C5.7879 17.9066 5.60145 17.9693 5.40951 17.9707C5.21758 17.9722 5.03022 17.9122 4.87479 17.7996C4.71936 17.6869 4.604 17.5276 4.54557 17.3448C4.48713 17.1619 4.48868 16.9652 4.54998 16.7833L6.09998 12.0083L2.04164 9.06665C1.87588 8.95766 1.75035 8.79741 1.68424 8.61036C1.61813 8.42332 1.61508 8.21978 1.67554 8.03083C1.736 7.84189 1.85666 7.67793 2.01907 7.56402C2.18149 7.4501 2.37673 7.39249 2.57498 7.39998H7.57498L9.16664 2.65832Z"
+                                                        fill="#FBAD39" />
+                                                </svg>
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M9.16664 2.65832C9.2242 2.47578 9.33846 2.31635 9.49281 2.20318C9.64717 2.09001 9.83358 2.02899 10.025 2.02899C10.2164 2.02899 10.4028 2.09001 10.5571 2.20318C10.7115 2.31635 10.8257 2.47578 10.8833 2.65832L12.4333 7.42498H17.4333C17.6315 7.41749 17.8268 7.4751 17.9892 7.58902C18.1516 7.70293 18.2723 7.86689 18.3327 8.05583C18.3932 8.24478 18.3902 8.44832 18.324 8.63536C18.2579 8.82241 18.1324 8.98266 17.9666 9.09165L13.9083 12.0333L15.4583 16.8083C15.5196 16.9902 15.5212 17.1869 15.4627 17.3698C15.4043 17.5526 15.2889 17.7119 15.1335 17.8246C14.9781 17.9372 14.7907 17.9972 14.5988 17.9957C14.4068 17.9943 14.2204 17.9316 14.0666 17.8167L9.99998 14.8417L5.94164 17.7917C5.7879 17.9066 5.60145 17.9693 5.40951 17.9707C5.21758 17.9722 5.03022 17.9122 4.87479 17.7996C4.71936 17.6869 4.604 17.5276 4.54557 17.3448C4.48713 17.1619 4.48868 16.9652 4.54998 16.7833L6.09998 12.0083L2.04164 9.06665C1.87588 8.95766 1.75035 8.79741 1.68424 8.61036C1.61813 8.42332 1.61508 8.21978 1.67554 8.03083C1.736 7.84189 1.85666 7.67793 2.01907 7.56402C2.18149 7.4501 2.37673 7.39249 2.57498 7.39998H7.57498L9.16664 2.65832Z"
+                                                        fill="#FBAD39" />
+                                                </svg>
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M9.16664 2.65832C9.2242 2.47578 9.33846 2.31635 9.49281 2.20318C9.64717 2.09001 9.83358 2.02899 10.025 2.02899C10.2164 2.02899 10.4028 2.09001 10.5571 2.20318C10.7115 2.31635 10.8257 2.47578 10.8833 2.65832L12.4333 7.42498H17.4333C17.6315 7.41749 17.8268 7.4751 17.9892 7.58902C18.1516 7.70293 18.2723 7.86689 18.3327 8.05583C18.3932 8.24478 18.3902 8.44832 18.324 8.63536C18.2579 8.82241 18.1324 8.98266 17.9666 9.09165L13.9083 12.0333L15.4583 16.8083C15.5196 16.9902 15.5212 17.1869 15.4627 17.3698C15.4043 17.5526 15.2889 17.7119 15.1335 17.8246C14.9781 17.9372 14.7907 17.9972 14.5988 17.9957C14.4068 17.9943 14.2204 17.9316 14.0666 17.8167L9.99998 14.8417L5.94164 17.7917C5.7879 17.9066 5.60145 17.9693 5.40951 17.9707C5.21758 17.9722 5.03022 17.9122 4.87479 17.7996C4.71936 17.6869 4.604 17.5276 4.54557 17.3448C4.48713 17.1619 4.48868 16.9652 4.54998 16.7833L6.09998 12.0083L2.04164 9.06665C1.87588 8.95766 1.75035 8.79741 1.68424 8.61036C1.61813 8.42332 1.61508 8.21978 1.67554 8.03083C1.736 7.84189 1.85666 7.67793 2.01907 7.56402C2.18149 7.4501 2.37673 7.39249 2.57498 7.39998H7.57498L9.16664 2.65832Z"
+                                                        fill="#FBAD39" />
+                                                </svg>
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M9.16664 2.65832C9.2242 2.47578 9.33846 2.31635 9.49281 2.20318C9.64717 2.09001 9.83358 2.02899 10.025 2.02899C10.2164 2.02899 10.4028 2.09001 10.5571 2.20318C10.7115 2.31635 10.8257 2.47578 10.8833 2.65832L12.4333 7.42498H17.4333C17.6315 7.41749 17.8268 7.4751 17.9892 7.58902C18.1516 7.70293 18.2723 7.86689 18.3327 8.05583C18.3932 8.24478 18.3902 8.44832 18.324 8.63536C18.2579 8.82241 18.1324 8.98266 17.9666 9.09165L13.9083 12.0333L15.4583 16.8083C15.5196 16.9902 15.5212 17.1869 15.4627 17.3698C15.4043 17.5526 15.2889 17.7119 15.1335 17.8246C14.9781 17.9372 14.7907 17.9972 14.5988 17.9957C14.4068 17.9943 14.2204 17.9316 14.0666 17.8167L9.99998 14.8417L5.94164 17.7917C5.7879 17.9066 5.60145 17.9693 5.40951 17.9707C5.21758 17.9722 5.03022 17.9122 4.87479 17.7996C4.71936 17.6869 4.604 17.5276 4.54557 17.3448C4.48713 17.1619 4.48868 16.9652 4.54998 16.7833L6.09998 12.0083L2.04164 9.06665C1.87588 8.95766 1.75035 8.79741 1.68424 8.61036C1.61813 8.42332 1.61508 8.21978 1.67554 8.03083C1.736 7.84189 1.85666 7.67793 2.01907 7.56402C2.18149 7.4501 2.37673 7.39249 2.57498 7.39998H7.57498L9.16664 2.65832Z"
+                                                        fill="#FBAD39" />
+                                                </svg>
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M9.16664 2.65832C9.2242 2.47578 9.33846 2.31635 9.49281 2.20318C9.64717 2.09001 9.83358 2.02899 10.025 2.02899C10.2164 2.02899 10.4028 2.09001 10.5571 2.20318C10.7115 2.31635 10.8257 2.47578 10.8833 2.65832L12.4333 7.42498H17.4333C17.6315 7.41749 17.8268 7.4751 17.9892 7.58902C18.1516 7.70293 18.2723 7.86689 18.3327 8.05583C18.3932 8.24478 18.3902 8.44832 18.324 8.63536C18.2579 8.82241 18.1324 8.98266 17.9666 9.09165L13.9083 12.0333L15.4583 16.8083C15.5196 16.9902 15.5212 17.1869 15.4627 17.3698C15.4043 17.5526 15.2889 17.7119 15.1335 17.8246C14.9781 17.9372 14.7907 17.9972 14.5988 17.9957C14.4068 17.9943 14.2204 17.9316 14.0666 17.8167L9.99998 14.8417L5.94164 17.7917C5.7879 17.9066 5.60145 17.9693 5.40951 17.9707C5.21758 17.9722 5.03022 17.9122 4.87479 17.7996C4.71936 17.6869 4.604 17.5276 4.54557 17.3448C4.48713 17.1619 4.48868 16.9652 4.54998 16.7833L6.09998 12.0083L2.04164 9.06665C1.87588 8.95766 1.75035 8.79741 1.68424 8.61036C1.61813 8.42332 1.61508 8.21978 1.67554 8.03083C1.736 7.84189 1.85666 7.67793 2.01907 7.56402C2.18149 7.4501 2.37673 7.39249 2.57498 7.39998H7.57498L9.16664 2.65832Z"
+                                                        stroke="#C3D4E9"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            <h1 class="text-secondary text-xs font-medium">
+                                                440+ Reviewer
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="divide-y-2 py-4" />
+                            <div class="flex flex-col gap-8">
+                                <div class="flex flex-col gap-4">
+                                    <span class="flex justify-between">
+                                        <h1 class="text-secondary text-xs font-medium">
+                                            Subtotal
+                                        </h1>
+                                        <h3 class="text-primary text-xs font-medium">$80.00</h3>
+                                    </span>
+
+                                    <div class="flex items-center justify-between gap-2">
+                                        <h1 class="text-secondary text-xs font-medium">Tax</h1>
+                                        <h3 class="text-primary text-xs font-medium">$0</h3>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <span class="flex flex-col">
+                                        <h1 class="text-primary text-lg font-medium">
+                                            Total Rental Price
+                                        </h1>
+                                        <h3 class="text-secondary text-xs font-medium">
+                                            Overall price and includes rental discount
+                                        </h3>
+                                    </span>
+
+                                    <span class="text-primary text-3xl font-medium">
+                                        $80.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</body>
