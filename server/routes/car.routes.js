@@ -1,27 +1,38 @@
 const express = require("express");
 const carController = require("../controllers/car.controller");
 const authController = require("../controllers/auth.controller");
+const reviewRouter = require("./../routes/review.routes");
+
 
 
 const router = express.Router();
 
-// All routes are protected after this middleware
-// router.use(authController.protect);
+router.use("/:carId/reviews", reviewRouter);
 
+router
+  .route("/top-5-popular")
+  .get(carController.aliasTopCars, carController.getAllCars);
 
-// All routes after this are restricted only to admin
-// router.use(authController.restrictTo("admin"));
+  router.route("/car-stats").get(carController.getCarStats);
 
 
 router
   .route("/")
   .get(carController.getAllCars)
-  .post(carController.createCar);
+  .post(    authController.protect,
+    authController.restrictTo("admin"),
+    carController.createCar);
 
 router
   .route("/:id")
   .get(carController.getCar)
-  .patch(carController.updateCar)
-  .delete(carController.deleteCar);
+  .patch(  authController.protect,
+    authController.restrictTo("admin"),
+    carController.updateCar)
+  .delete(    authController.protect,
+    authController.restrictTo("admin"),
+    carController.uploadCarImage,
+    carController.resizeCarImage,
+    carController.deleteCar);
 
 module.exports = router;

@@ -17,6 +17,10 @@
 		@apply bg-[#B37CCD];
 	}
 
+  .tertiary-text {
+		@apply text-[#B37CCD];
+	}
+
 	.primary-text {
 		@apply text-[#1a202c];
 	}

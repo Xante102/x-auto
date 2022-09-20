@@ -2,9 +2,6 @@ const mongoose = require("mongoose");
 const Car = require("./car.model");
 
 
-
-
-
 const reviewSchema = new mongoose.Schema(
   {
     response: {
@@ -42,7 +39,7 @@ const reviewSchema = new mongoose.Schema(
 reviewSchema.index({car: 1, user:1}, {unique:true})
 
 reviewSchema.pre(/^find/, function (next) {
- 
+
     this.populate({
     path: "user",
     select: "name photo",

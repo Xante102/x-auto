@@ -3,25 +3,31 @@ const favouriteController = require("../controllers/favourite.controller");
 const authController = require("../controllers/auth.controller");
 
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 
-// All routes are protected after this middleware
-// router.use(authController.protect);
-
-
-// All routes after this are restricted only to admin
-// router.use(authController.restrictTo("admin"));
-
+router.use(authController.protect);
 
 router
   .route("/")
   .get(favouriteController.getAllFavourites)
-  .post(favouriteController.createFavourite);
+  .post(
+    authController.restrictTo("user"),
+    favouriteController.setCarUserIds,
+    favouriteController.createFavourite
+  );
 
 router
   .route("/:id")
   .get(favouriteController.getFavourite)
-  .patch(favouriteController.updateFavourite)
-  .delete(favouriteController.deleteFavourite);
+  .patch(
+    authController.restrictTo("user", "admin"),
+    favouriteController.updateFavourite
+  )
+  .delete(
+    authController.restrictTo("user", "admin"),
+    favouriteController.deleteFavourite
+  );
+
 
 module.exports = router;
+

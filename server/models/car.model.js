@@ -73,9 +73,21 @@ const carSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
-});
+},
+{
+  toJSON: { virtuals: true },
+  toObject: { virtuals: true },
+}
+);
 
 carSchema.index({price:1, ratingsAvg:-1});
+
+// Virtual populate
+carSchema.virtual('reviews', {
+  ref: 'Review',
+  foreignField: 'car',
+  localField: '_id',
+});
 
 const Car = mongoose.model("Car", carSchema);
 

@@ -6,3 +6,7 @@ exports.getRental = factory.getOne(Rental);
 exports.getAllRentals = factory.getAll(Rental);
 exports.updateRental = factory.updateOne(Rental);
 exports.deleteRental = factory.deleteOne(Rental);
+
+
+
+
