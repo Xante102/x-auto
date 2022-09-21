@@ -23,13 +23,14 @@
 // Design
 -  reviews list for admin and user
 -  add/edit review form
--  rentals list for admin
--  favourites list for user
--  view modal for cars and users
--  flash messages
 
+-  rentals list for admin
+
+
+-  favourites list for user
+
+-  view modal for cars and users
 -  complete car details page
--  add hover effects
 
 
 

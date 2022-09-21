@@ -1,3 +1,4 @@
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { NgModule } from '@angular/core';
 import {HomeComponent} from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -24,6 +25,8 @@ const routes: Routes = [
   {path: 'cars-list', component: CarsListComponent},
   {path: 'car-form', component: CarFormComponent},
   {path: 'user-profile', component: UserProfileComponent},
+  {path: 'admin-dashboard', component: AdminDashboardComponent},
+
 
 
 

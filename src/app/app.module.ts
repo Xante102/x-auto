@@ -23,6 +23,10 @@ import { FilterComponent } from './filter/filter.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { SuccessMessageComponent } from './success-message/success-message.component';
+import { ErrorMessageComponent } from './error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     FilterComponent,
     CarsListComponent,
     FavouritesComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AdminDashboardComponent,
+    UserDashboardComponent,
+    SuccessMessageComponent,
+    ErrorMessageComponent
   ],
   imports: [
     BrowserModule,
