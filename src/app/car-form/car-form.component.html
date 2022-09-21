@@ -1,1 +1,137 @@
-<p>car-form works!</p>
+<div class="flex flex-col rounded-md bg-white p-5 shadow-md">
+      <div class="flex flex-col">
+          <div>
+              <h1 class="text-primary text-lg font-semibold">
+                  Add Car
+              </h1>
+          </div>
+          <div>
+              <h3 class="text-secondary text-xs font-medium">
+                  Please enter car details
+              </h3>
+          </div>
+      </div>
+   
+
+  <div class="mt-10 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
+      <div class="relative">
+          <label
+              class="text-primary block text-xs font-medium"
+              for="model">
+              Model
+          </label>
+
+          <input
+              placeholder="Car Model"
+              class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+              id="model"
+              type="text" />
+      </div>
+      <div class="relative">
+          <label
+              class="text-primary block text-xs font-medium"
+              for="type">
+              Type
+          </label>
+
+          <select
+          class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+          id="type"
+          type="text">
+          <option selected disabled>
+              Select a Type
+          </option>
+      </select>
+      </div>
+      <div class="relative">
+          <label
+              class="text-primary block text-xs font-medium"
+              for="transmission">
+              Transmission
+          </label>
+
+          <select
+          class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+          id="transmission"
+          type="text">
+          <option selected disabled>
+              Select a Transmission
+          </option>
+      </select>
+      </div>
+      <div class="relative">
+          <label
+              class="text-primary block text-xs font-medium"
+              for="fuelType">
+              Fuel Type
+          </label>
+
+          <input
+              placeholder="Fuel Type"
+              class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+              id="fuelType"
+              type="number" />
+      </div>
+      <div class="relative">
+        <label
+            class="text-primary block text-xs font-medium"
+            for="seats">
+            Seats
+        </label>
+
+        <input
+            placeholder="Number of seats"
+            class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+            id="seats"
+            type="number" />
+    </div>
+    <div class="relative">
+      <label
+          class="text-primary block text-xs font-medium"
+          for="price">
+          Price
+      </label>
+
+      <input
+          placeholder="Car Price"
+          class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+          id="price"
+          type="price" />
+  </div>
+  <div class="relative">
+    <label
+        class="text-primary block text-xs font-medium"
+        for="location">
+        Location
+    </label>
+
+    <select
+    class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+    id="location"
+    type="text">
+    <option selected disabled>
+        Select a Location
+    </option>
+</select>
+</div>
+<div class="relative">
+  <label
+      class="text-primary block text-xs font-medium"
+      for="email">
+      Image
+  </label>
+  <button class=" mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm" (click)="imagePicker.click()">  Select Images    </button>
+      
+  <input
+  name="image"
+  required
+    type="file"
+    class="hidden "
+    #imagePicker
+  />
+  
+
+</div>
+
+  </div>
+</div>

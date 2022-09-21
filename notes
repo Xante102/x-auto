@@ -1,8 +1,36 @@
-- cars table for admin
-- user table for admin
-- add/edit car form
-- reviews list for admin and user
-- add/edit review form
--rentals list for admin
-- favourites list for user
-- edit current user form
+// Things to complete for website
+
+
+
+// Fuctionality
+
+// CAR SECTION
+
+-  CRUD Functions
+-  Aggregation
+-  Pagination
+-  Filtering
+-  Sorting
+-  Search
+-  Flash Messages
+-  User should only be able to rent one car at a time
+-  Hide login button and show user icon when logged in  
+
+
+
+
+
+// Design
+-  reviews list for admin and user
+-  add/edit review form
+-  rentals list for admin
+-  favourites list for user
+-  view modal for cars and users
+-  flash messages
+
+-  complete car details page
+-  add hover effects
+
+
+
+

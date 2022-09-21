@@ -24,7 +24,7 @@ export class AuthService {
   login(data:any): Observable<APIResponse<User & string & Date>> {
     return this.http.post<APIResponse>(this.API_URL + '/login', data).pipe(
       tap((res) => {
-        console.log(res)
+        console.log(res);
         if (res.status === 'success') {
           this.isLoggedIn = true;
           this.authToken = res['token']!;
@@ -53,7 +53,7 @@ export class AuthService {
   }
 
   logout(){
-    this.isLoggedIn =false;
+    this.isLoggedIn = false;
     this.authToken = undefined;
 
 
@@ -71,7 +71,7 @@ export class AuthService {
 
       setTimeout(() => {
         this.logout();
-      }, this.expiresAt.getTime() );
+      }, this.expiresAt.getTime());
 
   }
 

@@ -6,6 +6,10 @@ import {LoginComponent} from './login/login.component';
 import {SignUpComponent} from './sign-up/sign-up.component';
 import {CarsComponent} from './cars/cars.component';
 import {DetailsComponent} from './details/details.component';
+import {UserListComponent} from './user-list/user-list.component';
+import {CarsListComponent} from './cars-list/cars-list.component';
+import {CarFormComponent} from './car-form/car-form.component';
+import {UserProfileComponent} from './user-profile/user-profile.component';
 
 
 
@@ -16,6 +20,14 @@ const routes: Routes = [
   {path: 'sign-up', component: SignUpComponent},
   {path: 'cars', component: CarsComponent},
   {path: 'details', component: DetailsComponent},
+  {path: 'users', component: UserListComponent},
+  {path: 'cars-list', component: CarsListComponent},
+  {path: 'car-form', component: CarFormComponent},
+  {path: 'user-profile', component: UserProfileComponent},
+
+
+
+
 
 
 
@@ -23,7 +35,9 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'top',
+  })],
   exports: [RouterModule]
 })
 

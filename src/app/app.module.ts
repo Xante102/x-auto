@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import {  HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AuthTokenInterceptor } from './interceptors/auth-token.interceptor';
 
@@ -21,6 +21,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { PickUpFormComponent } from './pick-up-form/pick-up-form.component';
 import { FilterComponent } from './filter/filter.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
+import { FavouritesComponent } from './favourites/favourites.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +40,15 @@ import { CarsListComponent } from './cars-list/cars-list.component';
     SignUpComponent,
     PickUpFormComponent,
     FilterComponent,
-    CarsListComponent
+    CarsListComponent,
+    FavouritesComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthTokenInterceptor, multi: true }

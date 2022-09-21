@@ -33,7 +33,7 @@
                             <div class="relative">
                                 <label
                                     class="text-primary block text-xs font-medium"
-                                    for="email">
+                                    for="name">
                                     Name
                                 </label>
 
@@ -46,40 +46,40 @@
                             <div class="relative">
                                 <label
                                     class="text-primary block text-xs font-medium"
-                                    for="email">
-                                    Name
+                                    for="phoneNumber">
+                                    Phone Number
                                 </label>
 
                                 <input
-                                    placeholder="Your Name"
+                                    placeholder="Phone Number"
                                     class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                    id="name"
+                                    id="phoneNumber"
+                                    type="number" />
+                            </div>
+                            <div class="relative">
+                                <label
+                                    class="text-primary block text-xs font-medium"
+                                    for="address">
+                                    Address
+                                </label>
+
+                                <input
+                                    placeholder="Address"
+                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                    id="address"
                                     type="text" />
                             </div>
                             <div class="relative">
                                 <label
                                     class="text-primary block text-xs font-medium"
-                                    for="email">
-                                    Name
+                                    for="city">
+                                    Town/City
                                 </label>
 
                                 <input
-                                    placeholder="Your Name"
+                                    placeholder="Town or City"
                                     class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                    id="name"
-                                    type="text" />
-                            </div>
-                            <div class="relative">
-                                <label
-                                    class="text-primary block text-xs font-medium"
-                                    for="email">
-                                    Name
-                                </label>
-
-                                <input
-                                    placeholder="Your Name"
-                                    class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                    id="name"
+                                    id="city"
                                     type="text" />
                             </div>
                         </div>
@@ -133,14 +133,13 @@
                                 <div class="relative">
                                     <label
                                         class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Locations
+                                        for="pickupLocation">
+                                        Location
                                     </label>
 
                                     <select
-                                        placeholder="Your Name"
                                         class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="pick-up-locations"
+                                        id="pickupLocation"
                                         type="text">
                                         <option selected disabled>
                                             Select a pick-up location
@@ -150,27 +149,25 @@
                                 <div class="relative">
                                     <label
                                         class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
+                                        for="pickupDate">
+                                        Date
                                     </label>
 
                                     <input
-                                        placeholder="Your Name"
                                         class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="name"
+                                        id="pickupDate"
                                         type="date" />
                                 </div>
                                 <div class="relative">
                                     <label
                                         class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
+                                        for="pickupTime">
+                                        Time
                                     </label>
 
                                     <input
-                                        placeholder="Your Name"
                                         class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="name"
+                                        id="pickupTime"
                                         type="time" />
                                 </div>
                             </div>
@@ -201,47 +198,45 @@
                             </div>
                             <div class="mt-4 grid h-full grid-cols-1 gap-5 lg:grid-cols-2">
                                 <div class="relative">
-                                    <label
-                                        class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Locations
-                                    </label>
+                                  <label
+                                  class="text-primary block text-xs font-medium"
+                                  for="dropoffLocation">
+                                  Location
+                              </label>
 
-                                    <select
-                                        placeholder="Your Name"
-                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="pick-up-locations"
-                                        type="text">
-                                        <option selected disabled>
-                                            Select a pick-up location
-                                        </option>
-                                    </select>
+
+                              <select
+                              class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                              id="dropoffLocation"
+                              type="text">
+                              <option selected disabled>
+                                  Select a drop-off location
+                              </option>
+                          </select>
                                 </div>
                                 <div class="relative">
-                                    <label
-                                        class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
-                                    </label>
+                                  <label
+                                  class="text-primary block text-xs font-medium"
+                                  for="dropoffDate">
+                                  Date
+                              </label>
 
-                                    <input
-                                        placeholder="Your Name"
-                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="name"
-                                        type="date" />
+                              <input
+                                  class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                  id="dropoffDate"
+                                  type="date" />
                                 </div>
                                 <div class="relative">
-                                    <label
-                                        class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
-                                    </label>
+                                  <label
+                                  class="text-primary block text-xs font-medium"
+                                  for="dropoffTime">
+                                  Time
+                              </label>
 
-                                    <input
-                                        placeholder="Your Name"
-                                        class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
-                                        id="name"
-                                        type="time" />
+                              <input
+                                  class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-[#F6F7F9] p-2.5 px-5 text-xs text-[#90A3BF]"
+                                  id="dropoffTime"
+                                  type="time" />
                                 </div>
                             </div>
                         </div>
@@ -342,54 +337,53 @@
                                 <div class="relative">
                                     <label
                                         class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Locations
+                                        for="cardNumber">
+                                        Card Number
                                     </label>
 
                                     <input
-                                        placeholder="Your Name"
+                                        placeholder=" Card Number"
                                         class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                        id="name"
+                                        id="cardNumber"
+                                        type="number" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="expDate">
+                                        Expiration Date
+                                    </label>
+
+                                    <input
+                                    class="font-base mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2.5 px-5 text-xs text-[#90A3BF]"
+                                    id="expDate"
+                                    type="date" />
+                                </div>
+                                <div class="relative">
+                                    <label
+                                        class="text-primary block text-xs font-medium"
+                                        for="cardHolder">
+                                        Card Holder
+                                    </label>
+
+                                    <input
+                                        placeholder="Card Holder"
+                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
+                                        id="cardHolder"
                                         type="text" />
                                 </div>
                                 <div class="relative">
                                     <label
                                         class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
+                                        for="cvc">
+                                        CVC
                                     </label>
 
                                     <input
-                                        placeholder="Your Name"
+                                        placeholder="CVC"
                                         class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                        id="name"
-                                        type="text" />
-                                </div>
-                                <div class="relative">
-                                    <label
-                                        class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
-                                    </label>
-
-                                    <input
-                                        placeholder="Your Name"
-                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                        id="name"
-                                        type="text" />
-                                </div>
-                                <div class="relative">
-                                    <label
-                                        class="text-primary block text-xs font-medium"
-                                        for="email">
-                                        Name
-                                    </label>
-
-                                    <input
-                                        placeholder="Your Name"
-                                        class="placeholder::font-semibold mt-2 w-full rounded-lg border-2 border-transparent bg-white p-2 px-5 text-sm placeholder:text-xs placeholder:text-[#90A3BF]"
-                                        id="name"
-                                        type="text" />
+                                        id="cvc"
+                                        type="number" />
                                 </div>
                             </div>
                         </div>
@@ -481,7 +475,7 @@
                                     class="mt-5 mb-5 flex w-full flex-row items-center justify-start gap-5">
                                     <div
                                         style="
-                                            background-image: url('../../files/featured-bg-1.jpg');
+                                            background-image: url('assets/images/featured-bg-1.jpg');
                                             object-position: center;
                                             object-fit: fill;
                                             background-size: cover;
@@ -489,7 +483,7 @@
                                         class="relative h-16 w-24 rounded-md">
                                         <div
                                             class="absolute bottom-2 left-0 right-0 flex items-center justify-center px-2 md:px-2">
-                                            <img src="../../files/nissangtr.jpg" />
+                                            <img src="assets/images/nissangtr.jpg" />
                                         </div>
                                     </div>
                                     <div class="gap-y-5">

@@ -51,6 +51,8 @@ const carSchema = new mongoose.Schema({
       values: ["pending", "returned", "available", "unavailable"],
       messages: "Status is either: pending, returned, available or unavailable",
     },
+    default: "available",
+
   },
 
   location: {
