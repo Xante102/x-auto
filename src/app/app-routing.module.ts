@@ -9,8 +9,9 @@ import {CarsComponent} from './cars/cars.component';
 import {DetailsComponent} from './details/details.component';
 import {UserListComponent} from './user-list/user-list.component';
 import {CarsListComponent} from './cars-list/cars-list.component';
-import {CarFormComponent} from './car-form/car-form.component';
+import {CarFormComponent} from './components/car-form/car-form.component';
 import {UserProfileComponent} from './user-profile/user-profile.component';
+import {ReviewFormComponent} from './review-form/review-form.component';
 
 
 
@@ -26,6 +27,8 @@ const routes: Routes = [
   {path: 'car-form', component: CarFormComponent},
   {path: 'user-profile', component: UserProfileComponent},
   {path: 'admin-dashboard', component: AdminDashboardComponent},
+  {path: 'review-form', component: ReviewFormComponent},
+
 
 
 

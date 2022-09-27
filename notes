@@ -14,7 +14,7 @@
 -  Search
 -  Flash Messages
 -  User should only be able to rent one car at a time
--  Hide login button and show user icon when logged in  
+-  Hide login button and show user icon when logged in
 
 
 
@@ -22,15 +22,10 @@
 
 // Design
 -  reviews list for admin and user
--  add/edit review form
-
 -  rentals list for admin
-
-
--  favourites list for user
-
 -  view modal for cars and users
--  complete car details page
+-  favourites list for user **
+
 
 
 

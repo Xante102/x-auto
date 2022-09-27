@@ -13,7 +13,7 @@ import { DetailsComponent } from './details/details.component';
 import { CarsComponent } from './cars/cars.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { CarFormComponent } from './car-form/car-form.component';
+import { CarFormComponent } from './components/car-form/car-form.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ReviewFormComponent } from './review-form/review-form.component';
 import { LoginComponent } from './login/login.component';
@@ -27,6 +27,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { SuccessMessageComponent } from './success-message/success-message.component';
 import { ErrorMessageComponent } from './error-message/error-message.component';
+import { UserSidebarComponent } from './user-sidebar/user-sidebar.component';
+import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ErrorMessageComponent } from './error-message/error-message.component';
     AdminDashboardComponent,
     UserDashboardComponent,
     SuccessMessageComponent,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    UserSidebarComponent,
+    AdminSidebarComponent
   ],
   imports: [
     BrowserModule,
